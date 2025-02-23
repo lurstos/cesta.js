@@ -1,3 +1,2 @@
 # cesta.js
-Neste repositório consta o projeto de uma cesta de compras em JavaScript cujos arquivos estão contidos na pasta LT.
-Dentro da pasta LT está o index.html, a pasta img e as pastas css e js com seus arquivos respectivos.
+Neste repositório consta o projeto de uma cesta de compras em JavaScript composta pelos arquivos index.html, cesta.js, cesta.css e imagens.
