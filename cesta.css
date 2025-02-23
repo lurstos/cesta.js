@@ -1,0 +1,127 @@
+body{
+    background-color: #eeeeee;
+    font-size: 12px;
+}
+.container {
+    width:95%;
+    margin:auto;
+}
+header h1 {
+    position:relative;
+}
+header ul li {
+    display:inline-block;
+    padding:6px 16px;
+}
+.menucabecalho {
+    position:absolute;
+    top:3em;
+    right:1.5em;
+}
+.menucabecalho a {
+    color: #036;
+	text-decoration: none;
+}
+    .menucabecalho a:hover {
+    color:#007dc6;
+}
+    .menucabecalho a:active {
+    color:#867dc6;
+}
+.main table {
+    width: 96%;
+}
+.main th, td {
+    border-top:0.1px solid #000;
+    border-bottom:0.1px solid #000;
+    border-radius:12px 3px;
+    text-align: center;
+    padding: 3px;
+}
+.main th {
+    background-color: #f2f2f2;
+}
+.main td img {
+    max-width:240px;
+}
+.menos {
+    background-color:#c30a0a;
+    font-weight:bold;
+    color:#fff;
+}
+.mais {
+    background-color:#0000cd;
+    font-weight:bold;
+    color:#fff;
+}
+.excluir {
+    font-weight: bold;
+    background-color:#c30a0a;
+    color:#fff;
+}
+.close {
+    font-weight: bold;
+    background-color:#c30a0a;
+    color:#fff;
+    border:1px solid #000;
+    padding:3px 8px;
+}
+#esvaziar {
+   margin: 5px 5px 5px 70%;
+}
+
+footer {
+    margin: 2em 15%;
+    padding:5px;
+    width:63%;
+    text-align:center;
+    background-color: #48d1cc;
+    border:1px solid #000;
+    border-radius: 3px 12px;
+    border-style:dashed;
+}
+
+@media(max-width:1300px){
+    .main th, td {
+        font-size:0.9em;
+    }
+    .main td img{
+        max-width:200px;
+    }    
+}
+@media(max-width:760px){
+    .main td img{
+        max-width:120px;
+    }
+    #produto1 {
+        max-height:110px;
+    }
+}
+@media(max-width:480px){
+    .main td img{
+        max-width:100px;
+    }
+    #produto1 {
+        max-height:100px;
+    }    
+}
+@media(max-width:446px){
+    .menucabecalho {
+        right:0.2em;
+    }
+    header ul li {
+        padding:6px 2px;
+    }
+    .main table {
+        width: 98%;
+    }    
+    .main th, td {
+        font-size:0.6em;
+    }
+    .main td img{
+        max-width:80px;
+    }
+    #produto1 {
+        max-height:100px;
+    }
+}

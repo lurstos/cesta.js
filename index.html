@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojas Tecnotop</title>
+
+    <link rel="stylesheet" href="cesta.css">
+    
+    <script type="text/javascript" src="cesta.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 id="logo"><img src="lt_logo.jpg" alt="Logo Lojas Tecnotop"></h1>
+        <nav class="menucabecalho">
+        <ul>
+            <li><a href="">MeusPedidos</a></li>      
+            <li><a href="">História/Local</a></li>
+            <li><a href="">Contate-nos!</a></li>
+        </ul>
+        </nav>
+    </header><!-- Fim do header -->
+        <div class="main">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Foto</th>                            
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="produto1.jpg" id="produto1" alt="Smartphone"></td>
+                            <td>Smartphone</td>
+                            <td>R$ <span id="valor1">1.500</span>,00</td>
+                            <td>
+                                <button class="menos" onclick="alterarQtd(1, '-')"> - </button>
+                                <span id="qtd1">0</span>
+                                <button class="mais" onclick="alterarQtd(1, '+')"> + </button>
+                            </td>
+                            <td><span id="total1"></span>,00</td>
+                            <td><span class="close" onclick="excluirItem(1)">x</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="produto2.jpg" alt="Notebook"></td>
+                            <td>Notebook</td>
+                            <td>R$ <span id="valor2">2.500</span>,00</td>
+                            <td>
+                                <button class="menos" onclick="alterarQtd(2, '-')"> - </button>
+                                <span id="qtd2">0</span>
+                                <button class="mais" onclick="alterarQtd(2, '+')"> + </button>
+                            </td>
+                            <td><span id="total2"></span>,00</td>
+                            <td><input type="button" value="x" class="excluir" onclick="excluirItem(2)"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="produto3.jpg" alt="Smart TV"></td>
+                            <td>Smart TV</td>
+                            <td>R$ <span id="valor3">2.000</span>,00</td>
+                            <td>
+                                <button class="menos" onclick="alterarQtd(3, '-')"> - </button>
+                                <span id="qtd3">0</span>
+                                <button class="mais" onclick="alterarQtd(3, '+')"> + </button>
+                            </td>
+                            <td><span id="total3"></span>,00</td>
+                            <td><span class="close" onclick="excluirItem(3)">x</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><span class="close" id="esvaziar" onclick="excluirTudo()">Esvaziar a Sacola</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!-- Fim do main -->
+            
+                    <footer>
+                        <b>TOTAL: <span id="valorTotal"></span>,00</b>
+                    </footer><!-- Fim do footer -->
+</div><!-- Fim do container -->
+</body>
+</html>
